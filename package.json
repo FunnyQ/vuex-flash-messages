@@ -1,0 +1,33 @@
+{
+  "name": "vuex-flash-messages",
+  "version": "1.0.0",
+  "description": "A vuex plugin for flash message management.",
+  "main": "dist/vuex-flash-messages.js",
+  "scripts": {
+    "dev": "tsc -w",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/funnyq/vuex-flash-messages.git"
+  },
+  "files": [
+    "src",
+    "dist/*.js",
+    "types/*.d.ts"
+  ],
+  "typings": "dist/vuex-flash-messages.d.ts",
+  "private": true,
+  "author": "FunnyQ <funnyq@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.0.5",
+    "tslint": "^6.1.2",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "vue": "^2.6.11",
+    "vuex": "^3.5.1"
+  }
+}
