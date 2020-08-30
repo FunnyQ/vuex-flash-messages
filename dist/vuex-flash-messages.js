@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.VuexFlashMessages = void 0;
-const MODULE_NAME = 'FlashMessages';
+const MODULE_NAME = 'flashMessage';
 exports.VuexFlashMessages = (store) => {
     if (!store.hasModule(MODULE_NAME))
         store.registerModule(MODULE_NAME, {

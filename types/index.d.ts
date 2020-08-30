@@ -1,9 +1,12 @@
 import { Store } from 'vuex'
 
+declare type MessageType = 'danger' | 'notice' | 'info' | 'warning' | 'success'
+declare type Position = 'top-left' | 'top' | 'top-right' | 'bottom-left' | 'bottom' | 'bottom-right'
+
 export declare type FlashMessage = {
-  type: string
+  type: MessageType
   message: string
-  position: string
+  position: Position
 }
 
 export declare type RootState = {

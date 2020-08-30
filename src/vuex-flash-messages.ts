@@ -1,7 +1,7 @@
 import { Store } from 'vuex'
 import { FlashMessage, RootState } from '../types/index'
 
-const MODULE_NAME = 'FlashMessages'
+const MODULE_NAME = 'flashMessage'
 
 export const VuexFlashMessages = (store: Store<RootState>) => {
   if (!store.hasModule(MODULE_NAME))
@@ -21,7 +21,7 @@ export const VuexFlashMessages = (store: Store<RootState>) => {
       },
 
       actions: {
-        add: async function (vuexContext, { type = 'info', message, position = 'top' }) {
+        add: async function (vuexContext, { type = 'info', message, position = 'top' }: FlashMessage) {
           return vuexContext.commit('ADD_FLASH_MESSAGE', { type, message, position })
         },
 
