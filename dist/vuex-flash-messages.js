@@ -1,8 +1,5 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.VuexFlashMessages = void 0;
 const MODULE_NAME = 'flashMessage';
-exports.VuexFlashMessages = (store) => {
+export const VuexFlashMessages = (store) => {
     if (!store.hasModule(MODULE_NAME))
         store.registerModule(MODULE_NAME, {
             namespaced: true,
@@ -34,5 +31,5 @@ exports.VuexFlashMessages = (store) => {
             },
         });
 };
-exports.default = exports.VuexFlashMessages;
+export default VuexFlashMessages;
 //# sourceMappingURL=vuex-flash-messages.js.map
